@@ -129,7 +129,7 @@ nav ul li a {
   line-height: 60px;
   color: #0a0826;
 }
-.highlight-section p{
+.highlight-section p {
   font-size: 16px;
   color: var(--paragraph-color);
   max-width: 404px;
@@ -137,4 +137,16 @@ nav ul li a {
 .highlight-image img {
   width: 567px;
   height: 427px;
+}
+
+/* footer section css  */
+footer {
+  margin-top: 150px;
+}
+.football {
+  width: 485px;
+  margin: auto;
+}
+.football img {
+  max-width: 100%;
 }
