@@ -37,12 +37,24 @@ ul {
   background: var(--dark-pink);
   color: #fff;
   padding: 10px 24px;
+  transition: transform .3s ease;
+}
+.button:hover{
+ transform: scale(.95);
 }
 /* header styles and nav style here  */
 header {
   width: 100vw;
   height: 80vh;
   background: #2d24a0;
+}
+.ball-animation{
+  display: grid;
+  place-items: center;
+}
+.anim-ball {
+  width: 100px;
+  animation: ball-anim 2s linear infinite;
 }
 nav {
   height: 44px;
@@ -76,6 +88,12 @@ nav ul li a {
 .hero-img img {
   width: 556px;
   height: 438px;
+}
+.hero-img{
+  transition: .5s ease-in;
+}
+.hero-img:hover{
+   transform: rotateZ(18deg);
 }
 /* player section css  */
 .players {
@@ -171,4 +189,14 @@ footer {
 .social-links ul li a i {
   color: gray;
   font-size: 32px;
+}
+
+/* animation css  */
+@keyframes ball-anim {
+  from {
+    transform:rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
