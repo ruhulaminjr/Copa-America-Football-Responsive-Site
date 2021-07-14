@@ -37,10 +37,10 @@ ul {
   background: var(--dark-pink);
   color: #fff;
   padding: 10px 24px;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
-.button:hover{
- transform: scale(.95);
+.button:hover {
+  transform: scale(0.95);
 }
 /* header styles and nav style here  */
 header {
@@ -48,13 +48,9 @@ header {
   height: 80vh;
   background: #2d24a0;
 }
-.ball-animation{
-  display: grid;
-  place-items: center;
-}
 .anim-ball {
-  width: 100px;
-  animation: ball-anim 2s linear infinite;
+  width: 50px;
+  animation: ball-anim 3s linear infinite alternate;
 }
 nav {
   height: 44px;
@@ -89,11 +85,11 @@ nav ul li a {
   width: 556px;
   height: 438px;
 }
-.hero-img{
-  transition: .5s ease-in;
+.hero-img {
+  transition: 0.5s ease-in;
 }
-.hero-img:hover{
-   transform: rotateZ(18deg);
+.hero-img:hover {
+  transform: rotateZ(18deg);
 }
 /* player section css  */
 .players {
@@ -194,9 +190,69 @@ footer {
 /* animation css  */
 @keyframes ball-anim {
   from {
-    transform:rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
     transform: rotateZ(360deg);
   }
 }
+
+/* media queries here  */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    height: 90vh;
+    padding: 16px;
+  }
+  nav ul {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-img img {
+    margin-top: 60px;
+    width: 330px;
+    height: 260px;
+  }
+  .anim-ball {
+    width: 30px;
+  }
+  /* players section responsive  */
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  /* .highlight-section  */
+  .highlight-section {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .highlight-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .highlight-image img {
+    width: 328px;
+    height: 248px;
+  }
+  .highlight-section p {
+    max-width: 100%;
+  }
+  /* footer section styles  */
+  footer {
+    width: 100%;
+  }
+  .football {
+    margin: 45px 0;
+    width: 280px;
+  }
+}
+/* small mobile media query  */
+
