@@ -198,7 +198,7 @@ footer {
 }
 
 /* Mobile media queries here  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   .container {
     width: 100%;
   }
@@ -256,7 +256,7 @@ footer {
 }
 
 /* Tab media Queries  */
-@media screen and (min-width: 601px) and (max-width: 1300px) {
+@media screen and (min-width: 661px) and (max-width: 1300px) {
   header {
     height: 100vh;
   }
@@ -281,5 +281,10 @@ footer {
   .players {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+  }
+  /* highlight section  */
+  .highlight-section {
+    flex-direction: column;
+    padding: 16px;
   }
 }
