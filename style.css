@@ -105,10 +105,12 @@ nav ul li a {
   background: #fff;
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.15));
   padding: 15px;
+  transition: transform .3s ease;
 }
 .player img {
   width: 300px;
   height: 256px;
+  object-fit: cover;
 }
 .player-name {
   font-family: Poppins;
@@ -124,6 +126,9 @@ nav ul li a {
   font-size: 16px;
   line-height: 26px;
   color: var(--paragraph-color);
+}
+.player:hover{
+  transform: scale(1.1) rotateZ(5deg);
 }
 
 /* highlight section css  */
@@ -186,7 +191,22 @@ footer {
   color: gray;
   font-size: 32px;
 }
-
+/* extra video section  */
+.videos-section{
+  margin-top: 100px;
+}
+.videos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 20px 0;
+}
+.video{
+  height: 450px;
+  background: #fff;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.15));
+  padding: 15px;
+}
 /* animation css  */
 @keyframes ball-anim {
   from {
