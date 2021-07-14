@@ -203,10 +203,10 @@ footer {
     width: 100%;
   }
   header {
-    height: 90vh;
+    height: 100vh;
     padding: 16px;
   }
-  nav ul {
+  .none{
     display: none;
   }
   .hero {
@@ -254,5 +254,4 @@ footer {
     width: 280px;
   }
 }
-/* small mobile media query  */
 
